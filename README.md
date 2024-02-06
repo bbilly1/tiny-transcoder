@@ -33,7 +33,7 @@ Resources to enable GPU support for a docker container, adjust to your environme
 - [Arch Wiki](https://wiki.archlinux.org/title/Docker#Run_GPU_accelerated_Docker_containers_with_NVIDIA_GPUs)
 
 ### Compose Examples
-Contribute to add more for additional hardware configurations.
+Contribute to add additional hardware configurations.
 
 <details>
 <summary>Basic without hardware support</summary>
