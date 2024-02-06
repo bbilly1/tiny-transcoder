@@ -1,0 +1,23 @@
+.progress-bar {
+    width: 100%;
+    background: var(--highlight-light);
+    position: relative;
+}
+
+.progress-fill {
+    height: 25px;
+    background: var(--highlight-dark);
+}
+
+.progress-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width: 700px) {
+    .progress-text {
+        width: 100%;
+    }
+}

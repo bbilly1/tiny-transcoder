@@ -1,0 +1,10 @@
+__pycache__
+.venv
+.mypy_cache
+node_modules
+app/static/dist
+
+queue.db
+queue.db-journal
+
+docker-compose.yml

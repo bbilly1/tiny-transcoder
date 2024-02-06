@@ -1,0 +1,4 @@
+Flask==3.0.1
+psutil==5.9.8
+python-ffmpeg==2.0.10
+uWSGI==2.0.23

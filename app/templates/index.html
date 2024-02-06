@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Transcoder</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <div class="main">
+        <div class="header boxed-content">
+            <a href="/">
+                <img src="{{ url_for('static', filename='img/tt-banner.png') }}" alt="banner">
+            </a>
+        </div>
+        <div id="react-root"></div>
+    </div>
+    <div class="footer boxed-content smaller">
+        <p>© Tiny Transcoder 2024 - v0.0.1 | <a href="https://github.com/bbilly1/tiny-transcoder" target="_blank">GitHub</a> | <a href="https://hub.docker.com/r/bbilly1/tiny-transcoder" target="_blank">DockerHub</a></p>
+    </div>
+    <script src="{{ url_for('static', filename='dist/bundle.js') }}"></script>
+</body>
+</html>

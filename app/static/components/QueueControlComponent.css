@@ -1,0 +1,9 @@
+.queue-control-wrap img {
+    width: 50px;
+    filter: var(--icon-filter-dark);
+    cursor: pointer;
+}
+
+.queue-control-wrap img.active {
+    filter: var(--icon-filter-light);
+}

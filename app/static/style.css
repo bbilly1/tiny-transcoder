@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'dejavu_sans_monobold';
+    src: url('./font/DejaVuSansMono-Bold-webfont.woff');
+}
+
+@font-face {
+    font-family: 'dejavu_sans_monobook';
+    src: url('./font/DejaVuSansMono-webfont.woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg: #414042;
+    --alt-bg: #555555;
+    --main-fg: #fff;
+    --highlight-dark: #6b8f42;
+    --highlight-light: #aaba87;
+    --signal: #ef4b46;
+    --icon-filter-dark: brightness(0) saturate(100%) invert(51%) sepia(56%) saturate(381%) hue-rotate(46deg) brightness(90%) contrast(88%);
+    --icon-filter-light: brightness(0) saturate(100%) invert(70%) sepia(16%) saturate(555%) hue-rotate(37deg) brightness(100%) contrast(91%);
+}
+
+h1 {
+    font-family: dejavu_sans_monobold, monospace;
+    margin-bottom: 1rem;
+    font-size: 2.3em;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 1.1rem;
+}
+
+a {
+    color: var(--highlight-light);
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--main-fg);
+    font-family: dejavu_sans_monobook, monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+button {
+    background-color: var(--highlight-dark);
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    color: var(--main-fg);
+    font-family: dejavu_sans_monobook, monospace;
+}
+
+button.error {
+    background-color: var(--signal);
+    color: var(--main-fg);
+}
+
+button.error:hover {
+    background-color: var(--signal);
+}
+
+button:hover {
+    background-color: var(--highlight-light);
+    transform: scale(1.1);
+}
+
+input {
+    background-color: var(--highlight-dark);
+    border: none;
+    color: var(--main-fg);
+    padding: 1rem;
+    margin: 0 1rem;
+    min-width: 300px;
+}
+
+.button-group button {
+    margin-right: 5px;
+}
+
+.spacer {
+    margin: 2rem 0;
+}
+
+.main {
+    flex-grow: 1;
+    margin: 2rem 5rem;
+}
+
+.boxed-content {
+    text-align: center;
+}
+
+.error {
+    color: var(--signal);
+}
+
+.smaller {
+    font-size: 0.9em;
+}
+
+.highlight {
+    color: var(--highlight-light);
+}
+
+.header img {
+    max-width: 400px;
+    width: 100%;
+}
+
+.footer {
+    background-color: var(--highlight-dark);
+    padding: 1rem 0;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .main {
+        margin: 1rem 2rem;
+    }
+}

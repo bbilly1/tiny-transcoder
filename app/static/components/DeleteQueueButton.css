@@ -1,0 +1,7 @@
+.delete-select select {
+    margin: 0 1rem;
+    padding: 11px;
+    background-color: var(--highlight-dark);
+    color: var(--main-fg);
+    border: none;
+}
