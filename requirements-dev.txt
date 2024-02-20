@@ -1,0 +1,6 @@
+-r requirements.txt
+requests
+black
+codespell
+flake8
+isort
