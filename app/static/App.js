@@ -4,7 +4,6 @@ import QueueComponent from './components/QueueComponent';
 import ProgressMessage from './components/ProgressMessage';
 
 function App() {
-  console.log('reload');
   return (
     <QueueProvider>
       <div>
