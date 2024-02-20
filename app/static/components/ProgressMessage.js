@@ -1,9 +1,11 @@
 // ProgressMessage.js
 import React, { useEffect, useState } from 'react';
 import './ProgressMessage.css';
+import { useQueue } from '../providers/state';
 import { fetchProgressData } from './ProgressFetch';
 
-const ProgressMessage = ({ progress, setProgress, setQueue }) => {
+const ProgressMessage = () => {
+  const { progress, setProgress, setQueue } = useQueue();
   const [eta, setETA] = useState(null);
   const [expectedFinishTime, setExpectedFinishTime] = useState(null);
   const [estimatedFinalSize, setEstimatedFinalSize] = useState(null);

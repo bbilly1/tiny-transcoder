@@ -2,11 +2,14 @@ import React, { useEffect } from 'react';
 import './QueueComponent.css';
 import { fetchProgressData } from './ProgressFetch';
 import { fetchQueueData } from './QueueFetch';
+import { useQueue } from '../providers/state';
 import QueueItem from './QueueItem';
 import QueueControlComponent from './QueueControlComponent';
 
 
-const QueueComponent = ({ queue, setQueue, setProgress }) => {
+const QueueComponent = () => {
+
+  const { queue, setQueue, setProgress } = useQueue();
 
   useEffect(() => {
     runFetch();

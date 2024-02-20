@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { QueueProvider } from './providers/state';
 import QueueComponent from './components/QueueComponent';
 import ProgressMessage from './components/ProgressMessage';
 
 function App() {
-  const [queue, setQueue] = useState([]);
-  const [progress, setProgress] = useState(null);
-
+  console.log('reload');
   return (
-    <div>
-      <ProgressMessage progress={progress} setProgress={setProgress} setQueue={setQueue}/>
-      <QueueComponent queue={queue} setQueue={setQueue} setProgress={setProgress}/>
-    </div>
+    <QueueProvider>
+      <div>
+        <ProgressMessage />
+        <QueueComponent />
+      </div>
+    </QueueProvider>
   );
 }
 
