@@ -72,6 +72,7 @@ button:hover {
 }
 
 input {
+    box-sizing: border-box;
     background-color: var(--highlight-dark);
     border: none;
     color: var(--main-fg);
@@ -121,7 +122,18 @@ input {
 }
 
 @media screen and (max-width: 700px) {
+    h1 {
+        text-align: center;
+    }
+    input {
+        margin: unset;
+        min-width: unset;
+        width: 100%;
+    }
     .main {
-        margin: 1rem 2rem;
+        margin: 1rem;
+    }
+    .queue-control-wrap {
+        text-align: center;
     }
 }
